@@ -1,15 +1,17 @@
 @media scrin and (min-width: 480px) {
     .container  {
-        width: 458px;
+        width: 428px;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 @media scrin and (min-width: 768px) {
     .container {
-        width: 798px;
+        width: 768px;
     }
 }
 @media scrin and (min-width: 1200px) {
     .container {
-        width: 1188px;
+        width: 1158px;
     }
 }

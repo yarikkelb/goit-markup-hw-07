@@ -31,6 +31,9 @@
         height: 100%;
         background-color: #ffffff;
         padding: 24px 35px 40px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     .mob-menu-close{
         background-color: transparent;
@@ -38,17 +41,36 @@
         display: block;
         margin-left: auto;
         margin-bottom: 32px;
-
     }
-    .mob-menu-item{
+    .mob-menu-list{
+        margin-bottom: 64px;
+    }
+    .mob-menu-item:not(:last-child){
+        margin-bottom: 40px;
+    }
+    .mob-menu-button{
         font-size: 36px;
         line-height: 1.11;
         letter-spacing: 0.02em;
         text-transform: capitalize;
         color: #2E2F42;
+    } 
+    .mob-menu-tel{
+       font-size: 36px;
+        line-height: 1.11;  
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: #4D5AE5; 
     }
-        
-                
+    .mob-menu-email{
+        font-size: 20px;
+        line-height: 1.2;       
+        letter-spacing: 0.02em;
+        color: #434455;
+    }
+    .mob-social-list{
+        gap: 64px;
+    }
     .about-list {
         gap: 24px;
     }

@@ -33,20 +33,76 @@
                 <li class="header-email list"><a class= "header-email link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             </ul>
         </address>
-        <button type="button" class="charm-menu" aria-label="мобільне меню" aria-expanded="false" class="js-open-menu">
+        <div>
+        <button class="charm-menu" js-open-menu type="button">
             <svg class="mobile-icon" width="32" height="22">
-                <use a href="./images/symbol-defs.svg#icon-charm_menu"> </use>
+                <use a href="./images/symbol-defs.svg#icon-charm_menu"></use>
             </svg>
         </button>
+    </div>
         </div>
+        <div class="mob-menu" js-menu-container>
+            <div>
+                <button class="mob-menu-close" js-close-menu type="button">
+                    <svg class="mob-menu-close-icon" width="8" height="8">
+                        <use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1"> </use>
+                    </svg>
+                </button>
+                <ul class="mob-menu-list list">
+                    <li class="mob-menu-item"><a class="mob-menu-button strip link" href="./index.html">Studio</a></li>
+                    <li class="mob-menu-item"><a class="mob-menu-button link" href="./portfolio.html">Portfolio</a></li>
+                    <li class="mob-menu-item"><a class="mob-menu-button link" href="">Contacts</a></li>
+                </ul>
+                </nav>
+            </div>
+            <div>
+                <address class="mob-menu-address list">
+                    <ul class="mob-menu-address list">
+                        <li class="mob-menu-email list"><a class="mob-menu-email link"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="mob-menu-tel list"><a class="mob-menu-tel link" href="tel:+110001111111">+11 (000)
+                                111-11-11</a></li>
+                    </ul>
+                </address>
         
+                <ul class="mob-social-list list">
+                    <li>
+                        <a href="" class="mob-social link">
+                            <svg width="16" height="16" class="mob-social-icon">
+                                <use href="./images/sprite.svg#icon-instagram"> </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="mob-social link">
+                            <svg width="16" height="16" class="mob-social-icon">
+                                <use href="./images/sprite.svg#icon-twitter"> </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="mob-social link">
+                            <svg width="16" height="16" class="mob-social-icon">
+                                <use href="./images/sprite.svg#icon-facebook"> </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="mob-social link">
+                            <svg width="16" height="16" class="mob-social-icon">
+                                <use href="./images/sprite.svg#icon-linkedin"> </use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header> 
     <main>
         <section class="hero">
             <div class="container">
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
             <button class="hero-btn" data-modal-open type="button">Order Service</button>
-           
         </div>
         </section>
         <section class="section">
@@ -448,62 +504,7 @@
             </div>     
         </div>
 <script src="./js/modal.js"></script>
-<div class="mob-menu" is-hidden class="js-menu-container">
-    <div>
-        <button class="mob-menu-close" class="js-close-menu" type="button">
-            <svg class="mob-menu-close-icon" width="8" height="8">
-                <use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1"> </use>
-            </svg>
-        </button>
-        <ul class="mob-menu-list list">
-            <li class="mob-menu-item"><a class="mob-menu-button strip link" href="./index.html">Studio</a></li>
-            <li class="mob-menu-item"><a class="mob-menu-button link" href="./portfolio.html">Portfolio</a></li>
-            <li class="mob-menu-item"><a class="mob-menu-button link" href="">Contacts</a></li>
-        </ul>
-        </nav>
-    </div>
-    <div>
-        <address class="mob-menu-address list">
-            <ul class="mob-menu-address list">
-                <li class="mob-menu-email list"><a class="mob-menu-email link"
-                        href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="mob-menu-tel list"><a class="mob-menu-tel link" href="tel:+110001111111">+11 (000)
-                        111-11-11</a></li>
-            </ul>
-        </address>
 
-        <ul class="mob-social-list list">
-            <li>
-                <a href="" class="mob-social link">
-                    <svg width="16" height="16" class="mob-social-icon">
-                        <use href="./images/sprite.svg#icon-instagram"> </use>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a href="" class="mob-social link">
-                    <svg width="16" height="16" class="mob-social-icon">
-                        <use href="./images/sprite.svg#icon-twitter"> </use>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a href="" class="mob-social link">
-                    <svg width="16" height="16" class="mob-social-icon">
-                        <use href="./images/sprite.svg#icon-facebook"> </use>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a href="" class="mob-social link">
-                    <svg width="16" height="16" class="mob-social-icon">
-                        <use href="./images/sprite.svg#icon-linkedin"> </use>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
-<script defer src="./js/mobile-menu.js"></script>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>

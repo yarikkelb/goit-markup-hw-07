@@ -6,14 +6,21 @@
     margin-left: auto;  
 }
 .section {
-    padding: 96px 0;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+.charm-menu {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    width: 32px;
 }
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    }
+}
 .header-list {
     display: none;
     align-items: flex-start;
@@ -24,12 +31,7 @@
     display: none;
     gap: 40px;
 }     
-.charm-menu{
-    position: absolute;
-    border: none;
-    background-color: transparent;
-    width: 32px;
-}
+
 .mobile-icon{
     fill: var(#ffffff);
 }
@@ -88,14 +90,22 @@
 }
 .hero {
     background-color: var(--hero);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office-1.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mob-1х.jpg);
     max-width: 1440px;
     margin: 0 auto;
     padding: 112px 0;
+    max-width: 428px;
     text-align: center;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+.hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mob-2х.jpg);
+}
 }
 .hero-title {
     font-family: 'Roboto', sans-serif;
@@ -221,6 +231,7 @@ justify-content: center;
 }
 .link {
     text-decoration: none;
+    display: inline-block;
 }
 .list {
     list-style: none;
@@ -336,14 +347,21 @@ justify-content: center;
 }
 .hero {
     background-color: var(--hero);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office-1.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-tab-1x.jpg);
     max-width: 1440px;
     margin: 0 auto;
-    padding: 188px 0;
+    padding: 112px 0;
     text-align: center;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+ @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+.hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-tab-2x.jpg);
+}
 }
 .about-list {
     display: flex;
@@ -1119,7 +1137,7 @@ justify-content: center;
 }
 .hero {
     background-color: var(--hero);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office-1.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-desk-1x.jpg);
     max-width: 1440px;
     margin: 0 auto;
     padding: 188px 0;
@@ -1127,6 +1145,13 @@ justify-content: center;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+.hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-desk-2x.jpg);
+    }
 }
 .about-list {
     display: flex;
@@ -1256,7 +1281,7 @@ justify-content: center;
     display: block;
     max-width: 100%;
 }
-        .team {
+.team {
     padding: 120px 0;
     background-color: var(--section-team-background);
 }

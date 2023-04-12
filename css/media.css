@@ -1,4 +1,4 @@
-@media scrin and (min-width: 428px) {
+@media screen and (min-width: 428px) {
 .container  {
     width: 100%;
     max-width: 428px;
@@ -289,7 +289,7 @@ justify-content: center;
  }
 }
 
-@media scrin and (min-width: 768px) {
+@media screen and (min-width: 768px) {
 .container {
     max-width: 768px;
     width: 100%;
@@ -1077,7 +1077,7 @@ justify-content: center;
 }
 }
     
-@media scrin and (min-width: 1158px) {
+@media screen and (min-width: 1158px) {
 .container {
     max-width: 1158px;
     margin: 0 auto;

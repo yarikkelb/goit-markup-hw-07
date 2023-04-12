@@ -102,8 +102,9 @@
 }
 .mob-menu{
     display: flex;
-    flex-direction: column;
     position: fixed;
+    flex-direction: column;
+    justify-content: space-between;
     top: 0;
     z-index: 1;
     width: 100%;
@@ -112,7 +113,7 @@
     padding: 24px 35px 40px 40px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    
     overflow: auto;
     top: 0;
 }
@@ -175,7 +176,7 @@
 .hero-title {
     font-family: 'Roboto', sans-serif;
     margin: 0 auto 48px;
-    width: 320px;
+    max-width: 320px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.07;
@@ -183,16 +184,13 @@
     letter-spacing: 0.02em;
     color: var(--hero-F);
 }     
-.about {
-    padding-top: 0;
-    display: none;
-}
 .about-list {
+    display: flex;
     flex-direction: column;
     gap: 24px;
 }
 .about-item {
-    width: calc((100% - 72px)/4);
+    /* width: calc((100% - 72px)/4); */
 }
 .about-item::before {
     display: none;
@@ -221,6 +219,10 @@
     background-image: url(../images/astronaut.svg);
     background-position: center;
     background-repeat: no-repeat;
+}
+.about {
+    padding-top: 0;
+    display: none;
 }
 .about-subtitle {
     font-family: 'Roboto', sans-serif;
@@ -1221,6 +1223,7 @@ justify-content: center;
 .about-list {
     display: flex;
     gap: 24px;
+    
 }
 .hero-title {
     font-family: 'Roboto', sans-serif;
@@ -1324,6 +1327,7 @@ justify-content: center;
 }
 .about {
     padding-top: 0;
+    display: block;
 }
 .promo-title {
     font-family: 'Roboto', sans-serif;

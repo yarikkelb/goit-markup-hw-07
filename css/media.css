@@ -9,6 +9,32 @@
     padding-top: 96px;
     padding-bottom: 96px;
 }
+.header {
+    border-bottom: 1px solid var(--header-borbot);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--header-logo);
+    text-decoration: none;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    margin-right: 76px;
+}
 .header-list {
     display: none;
 }

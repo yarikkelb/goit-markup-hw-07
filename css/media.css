@@ -113,7 +113,6 @@
     padding: 24px 35px 40px 40px;
     display: flex;
     flex-direction: column;
-    
     overflow: auto;
     top: 0;
 }

@@ -209,11 +209,11 @@ body{
        display: none; 
     }
 }
-.charm-menu svg{
+.charm-menu svg {
     stroke: #2E2F42;
 }
 .mob-menu {
-    
+    display: flex;
     position: fixed;
     flex-direction: column;
     justify-content: space-between;
@@ -226,7 +226,6 @@ body{
     overflow: auto;
     right: 0;
 }
-
 .mob-menu-close {
     position: absolute;
     background-color: transparent;
@@ -234,46 +233,58 @@ body{
     display: block;
     margin-left: auto;
     margin-bottom: 32px;
+    gap: 40px;
+    right: 24px
 }
-
 .mob-menu-list {
     margin-bottom: 64px;
 }
-
 .mob-menu-item:not(:last-child) {
     margin-bottom: 40px;
 }
-
 .mob-menu-button {
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: #2E2F42;
+    color: var(--about-subtitle);
 }
-
+.mob-menu-contacts{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--hover-focus);
+}
+.mob-menu-email {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
 .mob-menu-tel {
+    font-style: normal;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #4D5AE5;
 }
-
-.mob-menu-email {
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-
 .mob-social-list {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+}
+.mob-social{
     gap: 64px;
 }
 .hero {    
-    /* тут має грузитись мобайл 1х*/
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mob-1х.jpg);
     background-color: var(--hero);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office-1.jpg); 
     max-width: 1440px;
     margin: 0 auto;
     padding: 112px 0;
@@ -285,31 +296,31 @@ body{
 @media screen and (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
     .hero{
-/*тут має грузитись мобайл 2х*/
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mob-2х.jpg);
     }
 }
 @media screen and (min-width: 768px) {
     .hero {
-    /*тут має грузитись теблет 1х*/
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mob-1х.jpg);
     }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
 (min-resolution: 192dpi) and (min-width: 768px) {
     .hero{
-        /*тут має грузитись теблет 2x*/
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mob-2х.jpg);
     }
 }
 
 @media screen and (min-width: 1158px) {
     .hero {
         padding: 188px 0;
-        /*тут має грузитись desk 1x 1х*/
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mob-1х.jpg);
     }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
 (min-resolution: 192dpi) and (min-width: 1158px) {
     .hero {
-        /*тут має грузитись desk 2x */
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mob-2х.jpg);
     }
 }
 .about-list {
@@ -774,7 +785,11 @@ background-color: var(--hover-focus);
 }
 .footer-container{
     width: 264px;
-    text-align: center;
+}
+@media screen and (min-width: 768px) {
+    .footer-logo {
+        text-align: left;
+    }
 }
 @media screen and (min-width: 1158px) {
     .footer-container {
@@ -829,6 +844,11 @@ background-color: var(--hover-focus);
     line-height: 1.5; 
     margin: 0 0 16px;
     text-align: center;
+}
+@media screen and (min-width: 768px) {
+    .social-text {
+        text-align: left;
+    }
 }
 .soc-media{
     display: flex;
@@ -891,6 +911,11 @@ background-color: var(--hover-focus);
     margin: 0 0 16px; 
     cursor: pointer;
     text-align: center;
+}
+@media screen and (min-width: 768px) {
+    .footer-name {
+        text-align: left;
+    }
 }
 .subscribe-btn{
     display: flex;

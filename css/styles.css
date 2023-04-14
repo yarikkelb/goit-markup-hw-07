@@ -227,17 +227,14 @@ body{
     right: 0;
 }
 .mob-menu-close {
-    position: absolute;
     background-color: transparent;
     border: none;
     display: block;
     margin-left: auto;
-    margin-bottom: 32px;
-    gap: 40px;
     right: 24px
 }
 .mob-menu-list {
-    margin-bottom: 64px;
+    margin-bottom: 284px;
 }
 .mob-menu-item:not(:last-child) {
     margin-bottom: 40px;
@@ -259,11 +256,13 @@ body{
     color: var(--hover-focus);
 }
 .mob-menu-email {
+    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #434455;
+    margin-bottom: 40px;
 }
 .mob-menu-tel {
     font-style: normal;
@@ -273,6 +272,7 @@ body{
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #4D5AE5;
+    margin-bottom: 48px;
 }
 .mob-social-list {
     display: flex;

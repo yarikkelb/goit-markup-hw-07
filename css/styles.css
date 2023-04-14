@@ -283,7 +283,7 @@ body{
     gap: 64px;
 }
 .hero {    
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mob-1х.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mob-1x.jpg);
     background-color: var(--hero);
     max-width: 1440px;
     margin: 0 auto;
@@ -295,32 +295,31 @@ body{
 }
 @media screen and (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
-    .hero{
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mob-2х.jpg);
+    .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mob-2x.jpg);
     }
 }
 @media screen and (min-width: 768px) {
     .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mob-1х.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-tabl-1x.jpg);
     }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
 (min-resolution: 192dpi) and (min-width: 768px) {
     .hero{
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mob-2х.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-tabl-2x.jpg);
     }
 }
-
 @media screen and (min-width: 1158px) {
     .hero {
         padding: 188px 0;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mob-1х.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-desk-1x.jpg);
     }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
 (min-resolution: 192dpi) and (min-width: 1158px) {
     .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mob-2х.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-desk-2x.jpg);
     }
 }
 .about-list {
@@ -334,7 +333,6 @@ body{
         flex-wrap: wrap;
     }
 }
-
 .hero-title {
     font-family: 'Roboto', sans-serif;
     margin: 0 auto 72px;

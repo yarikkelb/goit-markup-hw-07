@@ -1,14 +1,16 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector("[js-open-menu]"),
-    closeModalBtn: document.querySelector("[js-close-menu]"),
-    modal: document.querySelector("[js-menu-container]"),
+    openMenuBtn: document.querySelector("[js-open-menu]"),
+    closeMenuBtn: document.querySelector("[js-close-menu]"),
+    menu: document.querySelector("[js-menu-container]"),
+    bodyNoScroll: document.querySelector("[data-no-scroll]")
   };
 
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
+  refs.openMenuBtn.addEventListener("click", toggleModal);
+  refs.closeMenuBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
+    refs.menu.classList.toggle("is-hidden");
+    refs.bodyNoScroll.classList.toggle('no-scroll');
   }
 })();
